@@ -44,8 +44,9 @@ for target in targets:
             else:
                 data.append(t)
                 split_part=t.split('/')
+                data_dir=split_part[len(split_part)-3]
                 data_num=split_part[len(split_part)-2]
-                fw = open('./data/' + target + '/' + data_num , 'w')
+                fw = open('./data/' + data_dir + '/' + data_num , 'w')
                 request = urllib.request.Request(url=t, headers=headers)
                 response = urllib.request.urlopen(request, timeout=30)
                 result = response.read()
