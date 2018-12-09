@@ -1,6 +1,6 @@
 import urllib.request
 import urllib.error
-
+import json
 
 films=[]
 for x in range(1,8):
@@ -21,3 +21,27 @@ for item in films:
     fw.write(str(result, encoding = "utf-8")+'\n')
 fw.close()
 
+fr = open('films.txt','r')
+films=[]
+for line in fr:
+    line =json.loads(line.strip('\n'))
+    films.append(line)
+fr.close()
+
+targets=['characters','planets','starships','vehicles','species']
+for target in targets:
+    fw =open('./data/'+target+'.txt','w')
+    data=[]
+    for item in films:
+        tmp =item[target]
+        for t in tmp:
+            if t in data:
+                continue
+            else:
+                data.append(t)
+                request = urllib.request.Request(url=t, headers=headers)
+                response = urllib.request.urlopen(request, timeout=20)
+                result = response.read()
+                print(result)
+                fw.write(str(result, encoding="utf-8") + '\n')
+    fw.close()
