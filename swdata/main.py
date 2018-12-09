@@ -13,12 +13,17 @@ headers["User-Agent"]="Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.
 
 fw = open('films.txt','w')
 for item in films:
+    split_part = item.split('/')
+    data_num = split_part[len(split_part) - 2]
+    fw2= open('./data/films/' + data_num , 'w')
     print(item)
     request=urllib.request.Request(url=item,headers=headers)
     response=urllib.request.urlopen(request,timeout=20)
     result =response.read()
     print(result)
     fw.write(str(result, encoding = "utf-8")+'\n')
+    fw2.write(str(result, encoding = "utf-8")+'\n')
+    fw2.close()
 fw.close()
 
 fr = open('films.txt','r')
@@ -30,7 +35,6 @@ fr.close()
 
 targets=['characters','planets','starships','vehicles','species']
 for target in targets:
-    fw =open('./data/'+target+'.txt','w')
     data=[]
     for item in films:
         tmp =item[target]
@@ -39,9 +43,12 @@ for target in targets:
                 continue
             else:
                 data.append(t)
+                split_part=t.split('/')
+                data_num=split_part[len(split_part)-2]
+                fw = open('./data/' + target + '/' + data_num , 'w')
                 request = urllib.request.Request(url=t, headers=headers)
-                response = urllib.request.urlopen(request, timeout=20)
+                response = urllib.request.urlopen(request, timeout=30)
                 result = response.read()
                 print(result)
                 fw.write(str(result, encoding="utf-8") + '\n')
-    fw.close()
+                fw.close()
