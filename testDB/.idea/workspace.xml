@@ -2,46 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b8d4701-838a-40de-98c9-f6cd369c2509" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/species/1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/15" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/16" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/17" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/18" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/19" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/20" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/21" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/22" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/23" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/24" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/25" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/26" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/27" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/28" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/29" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/30" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/31" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/32" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/33" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/34" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/35" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/36" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/37" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/species/9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebTest/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/../WebTest/service/service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../swapi-master/swapi-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../swapi-master/swapi-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,12 +35,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="1012" />
+          <entry key="go" value="1068" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="1012" />
+          <entry key="Go" value="1068" />
         </counts>
       </usages-collector>
     </session>
@@ -89,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+            <state relative-caret-position="440">
+              <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -210,13 +171,13 @@
     <frame x="274" y="382" width="1243" height="727" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1864979" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1864979" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49873418" weight="0.32941177" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49873418" weight="0.32605043" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4886076" visible="true" weight="0.23529412" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4886076" visible="true" weight="0.23529412" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -274,8 +235,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+        <state relative-caret-position="440">
+          <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
         </state>
       </provider>
     </entry>
