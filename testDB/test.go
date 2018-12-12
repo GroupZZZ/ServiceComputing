@@ -11,7 +11,7 @@ import (
 
 var db *bolt.DB=nil
 func Open(){
-	db,err := bolt.Open("my.db", 0600, nil)
+	db,err := bolt.Open("species.db", 0600, nil)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -22,7 +22,7 @@ func Open(){
 func CreateBucket(){
 	db.Update(func(tx *bolt.Tx) error {
 		// 获取BlockBucket表单
-		tx.CreateBucket([]byte("people"))
+		tx.CreateBucket([]byte("species"))
 		return nil;
 		})
 }
@@ -30,7 +30,7 @@ func Write() { //只用调用一次的函数，把单个文件写入db
 	db.Update(func(tx *bolt.Tx) error {
 		// 获取Bucket筒
 
-		b:=tx.Bucket([]byte("people"))
+		b:=tx.Bucket([]byte("species"))
 		for i := 1; i < 88; i++ {
 			file, err := os.Open("people/" + strconv.Itoa(i))
 
@@ -73,7 +73,7 @@ func test(){
 	})
 }
 func main() {
-	db,err := bolt.Open("my.db", 0600, nil)
+	db,err := bolt.Open("species.db", 0600, nil)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -83,16 +83,16 @@ func main() {
 
 	db.Update(func(tx *bolt.Tx) error {
 		// 获取BlockBucket表单
-		tx.CreateBucket([]byte("people"))
+		tx.CreateBucket([]byte("species"))
 		return nil;
 	})
 
 	db.Update(func(tx *bolt.Tx) error {
 		// 获取Bucket筒
 
-		b:=tx.Bucket([]byte("people"))
-		for i := 1; i < 88; i++ {
-			file, err := os.Open("people/" + strconv.Itoa(i))
+		b:=tx.Bucket([]byte("species"))
+		for i := 1; i < 38; i++ {
+			file, err := os.Open("species/" + strconv.Itoa(i))
 
 			if err != nil {
 				continue//如果不存在，则不读
