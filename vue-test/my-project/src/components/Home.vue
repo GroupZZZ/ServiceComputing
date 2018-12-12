@@ -112,7 +112,7 @@ export default {
       if (content === '') {
         content = 'people/1/'
       }
-      var trl = 'http://localhost:8080/api/' + content
+      var trl = 'http://localhost:8000/api/' + content
       var successCallback = (response) => {
         document.getElementById('info').innerHTML = JSON.stringify(JSON.parse(response.data), null, '\t')
         console.log('服务器请求成功了')
