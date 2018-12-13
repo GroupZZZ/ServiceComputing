@@ -1,19 +1,17 @@
-
 package main
 
 import (
+	"os"
+
 	"./service"
 	flag "github.com/spf13/pflag"
-	"os"
 )
 
 const (
-	PORT string = "8080"
+	PORT string = "8000"
 )
 
-
-
-func main() {//入口 调用service
+func main() { //入口 调用service
 
 	port := os.Getenv("PORT")
 	if len(port) == 0 {

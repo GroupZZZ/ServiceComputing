@@ -22,10 +22,10 @@
         </h1>
         <div class="input-group">
               <span class="input-group-addon">https://swapi.co/api/</span>
-              <input v-model="msg" type="text" class="form-control" placeholder="people/1/">
+              <input v-model="msg" type="text" class="form-control" placeholder="people/1">
               <span class="input-group-btn"><button v-on:click="interactive_call()" onClick="return false;" class="btn btn-primary">request</button></span>
             </div>
-        <small>Need a hint? try <a href="#" v-on:click="update('people/1/')" onClick="return false;"><i>people/1/</i></a> or <a href="#" v-on:click="update('planets/3/')" onClick="return false;"><i>planets/3/</i></a> or <a href="#" v-on:click="update('starships/9/')" onClick="return false;"><i>starships/9/</i></a></small>
+        <small>Need a hint? try <a href="#" v-on:click="update('people/1')" onClick="return false;"><i>people/1/</i></a> or <a href="#" v-on:click="update('planets/3')" onClick="return false;"><i>planets/3/</i></a> or <a href="#" v-on:click="update('starships/9')" onClick="return false;"><i>starships/9/</i></a></small>
         <p class="lead pad_top">Result:</p>
         <div class="well">
           <pre id="info" class="pre-scrollable">
@@ -94,6 +94,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'Home',
   data () {
@@ -103,30 +104,22 @@ export default {
   },
   methods: {
     update: function (path) {
-      this.msg=path;
-      interactive_call()
+      this.msg = path
+      this.interactive_call()
     },
     interactive_call: function () {
-      alert('a')
       var content = this.msg
       if (content === '') {
-        content = 'people/1/'
+        content = 'people/1'
       }
-      var trl = 'http://localhost:8000/api/' + content
-      var successCallback = (response) => {
-        document.getElementById('info').innerHTML = JSON.stringify(JSON.parse(response.data), null, '\t')
-        console.log('服务器请求成功了')
-        console.log(response.data)
-      }
-      var errorCallback = (response) => {
+      var trl = '/api/' + content
+      axios.get(trl).then(function (response) {
+        document.getElementById('info').innerHTML = JSON.stringify(response.data, null, '\t')
+        console.log(response)
+      }).catch(function (error) {
         document.getElementById('info').innerHTML = '404 error'
-        console.log('服务器请求出错了')
-      }
-      this.$http.get(trl,
-        {params: {
-          word: 'a'
-        }}
-      ).then(successCallback, errorCallback)
+        console.log(error)
+      })
     }
   }
 }
