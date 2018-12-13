@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1b8d4701-838a-40de-98c9-f6cd369c2509" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../swapi-master/swapi-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../swapi-master/swapi-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +168,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="274" y="382" width="1243" height="727" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1864979" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

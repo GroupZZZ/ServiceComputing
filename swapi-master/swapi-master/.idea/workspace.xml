@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0d2c3ea8-da38-4419-8d81-3b5453ab38bb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../testDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../testDB/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../testDB/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../testDB/test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +169,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="322" y="134" width="1412" height="828" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20236337" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
