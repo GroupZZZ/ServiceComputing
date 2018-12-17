@@ -10,15 +10,28 @@
 * 服务 API 不能少于 6 个
 * 基于 Vue 架构的开发
 
+
 ## 项目架构
 
 >* 我们的项目主要包括4各部分，WebTest、vue-test、testDB、swdata
 
 #### WebTest——后端文件，用来搭建服务器
 
+>* 后端文件的基础就是之前作业中实现的go语言web服务器
+>* 后端文件的主要任务为实现一个可以从数据库提取信息的接口，以及通过之前用过的gorella包中的mux来分割url请求（类似一个路由功能），并返回一个request
+>* 后段文件的详细介绍，[请点击这里](https://blog.csdn.net/kotomineshiki/article/details/85041559)
+
+<br>
+
 ![WebTest](https://github.com/GroupZZZ/ServiceComputing/blob/master/Picture/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-12-17%20%E4%B8%8A%E5%8D%8810.15.03.png?raw=true)
 
+<br>
+
 #### vue-test——前端框架
+
+>* 前段采用vue的框架，其主要的优点在与简单，高效以及可复用。
+>* Vue的关键思想在于使用小型、独立和可复用的组件来构建一棵大型的组件树，最后成为一个应用；其中每个vue文件都可用于生成对应的组件，每个组件都是可复用的vue实例
+>* 在这次作业的要求中，我们要求实现三个界面，而其实每个界面的UI在大部分都是完全一样的，例如顶端的logo，边栏等。在这种情况下，vue架构的小组件可复用的功能就可以得到很好的减少冗余重复的代码(虽然我们的代码并没有怎么用到)
 
 ![vue-test](https://github.com/GroupZZZ/ServiceComputing/blob/master/Picture/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-12-17%20%E4%B8%8A%E5%8D%8811.07.45.png?raw=true)
 
