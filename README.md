@@ -37,9 +37,15 @@
 
 #### testDB——用来生成数据库（将抓取的文件存入数据库）
 
+>* 利用GO语言钦点的超级轻量级数据库BoltDB
+>* 其中的三个文件夹分别保存我们从官网上拿到的对应的三类api数据
+
 ![testDB](https://github.com/GroupZZZ/ServiceComputing/blob/master/Picture/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-12-17%20%E4%B8%8A%E5%8D%8811.08.02.png?raw=true)
 
 #### swdata——保存抓取数据的代码以及抓取的数据
+
+>* 从网站上抓取下来的数据，为txt文件
+>* 还需要在后面将抓取的数据转化为json格式
 
 ![swdata](https://github.com/GroupZZZ/ServiceComputing/blob/master/Picture/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-12-17%20%E4%B8%8A%E5%8D%8811.08.13.png?raw=true)
 
