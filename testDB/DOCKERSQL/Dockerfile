@@ -5,5 +5,5 @@ ENV MYSQL_ALLOW_EMPTY_PASSWORD yes
 COPY setup.sh /mysql/setup.sh
 COPY schema.sql /mysql/s.sql
 
-COPY privileges.sql /mysql/p.sql
+COPY p.sql /mysql/p.sql
 CMD ["sh", "/mysql/setup.sh"]

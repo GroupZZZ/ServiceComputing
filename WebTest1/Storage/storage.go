@@ -1,108 +1,114 @@
 package storage
 
 import (
+	"database/sql"
+	"fmt"
 	"github.com/boltdb/bolt"
-	"log"
-	"strconv"
+	"strings"
+	"time"
 )
 var db *bolt.DB=nil
 
+
+const (
+	userName = "docker"
+	password = "admin"
+	ip       = "127.0.0.1"
+	port     = "3306"
+	dbName   = "docker_mysql"
+)
+
+var DB *sql.DB
 func Open(){//打开数据库
-//	fmt.Print("343423")
-	db,err:=bolt.Open("F:\\ServiceComputing\\testDB\\my.db",0600,nil)
-//	fmt.Print("34454523")
-	if err !=nil{
-		log.Fatal(err)
+	//构建连接："用户名:密码@tcp(IP:端口)/数据库?charset=utf8"
+	path := strings.Join([]string{userName, ":", password, "@tcp(", ip, ":", port, ")/", dbName, "?charset=utf8"}, "")
+	//打开数据库,前者是驱动名，所以要导入： _ "github.com/go-sql-driver/mysql"
+reconnect:
+	DB, _ = sql.Open("mysql", path)
+	//设置数据库最大连接数
+	DB.SetConnMaxLifetime(100)
+	//设置上数据库最大闲置连接数
+	DB.SetMaxIdleConns(10)
+	//验证连接
+	if err := DB.Ping(); err != nil {
+		fmt.Println("opon database fail")
+		time.Sleep(time.Duration(2) * time.Second)
+		goto reconnect
+	} else {
+		fmt.Println("opon database success")
 	}
-//	fmt.Print("344454554523")
-	if db ==nil{
-		log.Fatal(db)
-	}
+
+
 }
 func Write(){//把每个人的数据写入这个数据库，key是id，value是目标json值
 
 }
 
 func  GetPeople(PeopleID int)  (string)  {
-	db,err:=bolt.Open("people.db",0600,nil)
-	//	fmt.Print("34454523")
-	if err !=nil{
-		log.Fatal(err)
+	Open()
+	rows, err := DB.Query("SELECT * from PEOPLE WHERE id="+string(PeopleID)+";")
+	if err != nil {
+		fmt.Println("查询出错了")
 	}
-	//	fmt.Print("344454554523")
-	if db ==nil{
-		log.Fatal(db)
-	}
-	//fmt.Print("34343")
-    var result string
-	db.View(func(tx *bolt.Tx) error {
-		// Assume bucket exists and has keys
-		b := tx.Bucket([]byte("people"))
-		if(b==nil){
-			log.Fatal(b)
-		}
-		result=string(b.Get([]byte(strconv.Itoa(PeopleID))))
-		//fmt.Printf("1234+%s\n",result)
+	var data string
+	for rows.Next() {
 
-		return nil
-	})
-    db.Close()
-   // fmt.Printf("%s\n",result)
-    return result;
+
+		var id int
+
+		err := rows.Scan(&id, &data)
+
+		if err != nil {
+
+			fmt.Println("rows fail")
+
+		}
+	}
+	return data
 }
 
 func  GetSpecies(SpeciesID int)  (string)  {
-	db,err:=bolt.Open("species.db",0600,nil)
-	//	fmt.Print("34454523")
-	if err !=nil{
-		log.Fatal(err)
+	Open()
+	rows, err := DB.Query("SELECT * from Species WHERE id="+string(SpeciesID)+";")
+	if err != nil {
+		fmt.Println("查询出错了")
 	}
-	//	fmt.Print("344454554523")
-	if db ==nil{
-		log.Fatal(db)
-	}
-	//fmt.Print("34343")
-	var result string
-	db.View(func(tx *bolt.Tx) error {
-		// Assume bucket exists and has keys
-		b := tx.Bucket([]byte("species"))
-		if(b==nil){
-			log.Fatal(b)
-		}
-		result=string(b.Get([]byte(strconv.Itoa(SpeciesID))))
-		//fmt.Printf("1234+%s\n",result)
+	var data string
+	for rows.Next() {
 
-		return nil
-	})
-	db.Close()
-	// fmt.Printf("%s\n",result)
-	return result;
+
+		var id int
+
+		err := rows.Scan(&id, &data)
+
+		if err != nil {
+
+			fmt.Println("rows fail")
+
+		}
+	}
+	return data
 }
 
 func  GetStarships(StarshipsID int)  (string)  {
-	db,err:=bolt.Open("starships.db",0600,nil)
-	//	fmt.Print("34454523")
-	if err !=nil{
-		log.Fatal(err)
+	Open()
+	rows, err := DB.Query("SELECT * from STARSHIPS WHERE id="+string(StarshipsID)+";")
+	if err != nil {
+		fmt.Println("查询出错了")
 	}
-	//	fmt.Print("344454554523")
-	if db ==nil{
-		log.Fatal(db)
-	}
-	//fmt.Print("34343")
-	var result string
-	db.View(func(tx *bolt.Tx) error {
-		// Assume bucket exists and has keys
-		b := tx.Bucket([]byte("starships"))
-		if(b==nil){
-			log.Fatal(b)
-		}
-		result=string(b.Get([]byte(strconv.Itoa(StarshipsID))))
-		//fmt.Printf("1234+%s\n",result)
+	var data string
+	for rows.Next() {
 
-		return nil
-	})
-	db.Close()
-	// fmt.Printf("%s\n",result)
-	return result;
+
+		var id int
+
+		err := rows.Scan(&id, &data)
+
+		if err != nil {
+
+			fmt.Println("rows fail")
+
+		}
+	}
+	return data
 }
