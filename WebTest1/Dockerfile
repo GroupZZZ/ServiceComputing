@@ -13,5 +13,5 @@ RUN go get -d -v ./...
 
 RUN  go build .
 ENTRYPOINT  ["server"]
-EXPOSE 8080
+EXPOSE 8000
 
