@@ -1,7 +1,7 @@
 package service
 
 import (
-	"../Storage"
+	"github.com/GroupZZZ/ServiceComputing/WebTest1/Storage"
 	"github.com/gorilla/mux"
 	"log"
 	"net/http"

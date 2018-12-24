@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"./service"
+	"github.com/GroupZZZ/ServiceComputing/WebTest1/service"
 	flag "github.com/spf13/pflag"
 )
 

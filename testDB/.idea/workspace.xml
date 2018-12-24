@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b8d4701-838a-40de-98c9-f6cd369c2509" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../WebTest1/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WebTest1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebTest1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebTest1/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../WebTest1/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WebTest1/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/../WebTest1/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WebTest1/service/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/../WebTest1/service/api.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starships.db" beforeDir="false" afterPath="$PROJECT_DIR$/starships.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -222,6 +219,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="120" y="113" width="1244" height="929" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.193086" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
