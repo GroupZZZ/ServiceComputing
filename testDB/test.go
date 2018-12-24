@@ -1,12 +1,13 @@
 package main
 
 import (
+	"fmt"
 	"github.com/boltdb/bolt"
+	_ "github.com/go-sql-driver/mysql"
 	"io/ioutil"
 	"log"
 	"os"
 	"strconv"
-	"fmt"
 )
 
 var db *bolt.DB=nil
