@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f60be47d-a315-4bf4-9edd-f49c51e8129e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testDB/DOCKERSQL/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testDB/DOCKERSQL/p.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testDB/DOCKERSQL/s.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testDB/DOCKERSQL/setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testDB/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -400,6 +404,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="164" width="2066" height="946" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11553785" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
