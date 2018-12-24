@@ -12,6 +12,6 @@ COPY . /go/src/web-app
 RUN go get -d -v ./...
 
 RUN  go build .
-ENTRYPOINT  ["server"]
+ENTRYPOINT  ["./server"]
 EXPOSE 8000
 

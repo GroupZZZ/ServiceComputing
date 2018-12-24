@@ -4,8 +4,6 @@
     <list default="true" id="1b8d4701-838a-40de-98c9-f6cd369c2509" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../WebTest1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebTest1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WebTest1/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../WebTest1/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebTest1/webtest.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
