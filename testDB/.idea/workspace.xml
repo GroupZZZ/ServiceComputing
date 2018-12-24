@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b8d4701-838a-40de-98c9-f6cd369c2509" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DOCKERSQL/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DOCKERSQL/p.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DOCKERSQL/s.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DOCKERSQL/setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebTest1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebTest1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DOCKERSQL/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/DOCKERSQL/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,29 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DOCKERSQL/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DOCKERSQL/p.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DOCKERSQL/s.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="133">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -156,8 +133,8 @@
         <option value="$PROJECT_DIR$/test.go" />
         <option value="$PROJECT_DIR$/mysql.go" />
         <option value="$PROJECT_DIR$/DOCKERSQL/s.sql" />
-        <option value="$PROJECT_DIR$/DOCKERSQL/Dockerfile" />
         <option value="$PROJECT_DIR$/DOCKERSQL/p.sql" />
+        <option value="$PROJECT_DIR$/DOCKERSQL/Dockerfile" />
       </list>
     </option>
   </component>
@@ -362,6 +339,13 @@
     <entry file="file://$PROJECT_DIR$/DOCKERSQL/setup.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/DOCKERSQL/p.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DOCKERSQL/s.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -371,15 +355,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DOCKERSQL/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DOCKERSQL/p.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
+        <state relative-caret-position="133">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
